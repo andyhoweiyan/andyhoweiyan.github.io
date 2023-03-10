@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Education Website Page</title>
+        <link rel="icon" href="Image/Logo.png" type="image/png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css"/>
+        
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function validateForm(){
+        let y = document.contactform.username.value;
+                if (y== "") {
+                alert("Please provide your Student Name!");
+                return false;
+                }
+                var letters= /^[A-Za-z]/;
+                if (!y.match(letters))
+                {
+                 alert("Your name must be alphabet.");
+                return false;
+                }
+
+        let e = document.contactform.email.value;
+                if (e== "") {
+                alert("Please provide your email");
+                return false;
+                }
+
+        let c = document.contactform.subject.value;
+                if (c== "") {
+                alert("Please provide your Subject");
+                return false;
+                }
+
+        let h = document.contactform.help.value;
+                if (h== "") {
+                alert("Please provide your what u need to help");
+                return false;
+            }
+            }
+            </script>
+    </head>
+    <body>
+        <nav>
+            <img src="Image/Logo.png" alt="">
+            <div class="navigation">
+                <ul>
+                    <li><a href="Page.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Programme.html">Programmes</a></li>
+                    <li><a href="Pay.html">Registration</a></li>
+                    <li><a class="active" href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Home -->
+
+        <section id="about-home">
+            <h2>Contact Us</h2>
+        </section>
+
+        <section id="contact">
+            <div class="getin">
+                <h2>Get in touch</h2>
+                <p>Looking for help ? Fill the form and start a new adventure</p>  
+                <div class="getin-details">
+                <h3>Headquaters</h3>
+                <div>
+                <i class="far fa-home get"></i>
+                <p>Jalan Lebuh Cemerlang, Taman Desa Cemerlang, 81800 Ulu Tiram, Johor</p>
+                </div>
+                    <h3>Phone</h3>
+                    <div>
+                    <i class="fas fa-phone-alt get"></i>
+                    <p> (+60) 7112638 <br> (+60) 9213003</p></div>
+                        <h3>Support</h3>
+                        <div>
+                        <i class="far fa-envelope-open-text get"></i>
+                        <p>feedback@crescendo.edu.my<br>studentsupport@crescendo.edu.my </p></div>
+                            <h3>Follow Us</h3>
+                            <div class="pro-links">
+                                <a href="http://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                                <a href="http://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+                                <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="contactform">
+                        <form name="contactform" onsubmit="return validateForm()">
+                        <h4>Let's Contact</h4>
+                        <p>If you have any questions or want to know more information, please leave your email and what you want to know, let us serve you</p>
+                    <div class="form-row">
+                        <input type="text" name="username" placeholder="Your Name">
+                        <input type="text" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-col">
+                        <input type="text" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-col">
+                        <textarea name="help" id="help" cols="30" row="8" placeholder="How can we help?" ></textarea>
+                    </div>
+                    <div class="form-col">
+                        <button>Send Message</button></a>
+                </div>
+        </section>
+
+        <section id="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15953.378763974111!2d103.80318538058762!3d1.5572866819183646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da6eaf32da76a9%3A0x30a4766eff5b6b53!2sCrescendo%20International%20College%2C%20Johor%20Bahru!5e0!3m2!1szh-CN!2smy!4v1678114737349!5m2!1szh-CN!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <footer>
+            <div class="footer-col">
+                <h3>QUICK LINKS</h3>
+                <li>ACCA Online Registration</li>
+                <li><a href="https://sis.sqayy.com/stud/"></a>Crescendo Student Portal</li>
+                <li><a href="https://lms.crescendo.edu.my/"></a>Crescendo eLearning</li>
+            </div>
+            <div class="footer-col">
+                <h3>SITE MAPS</h3>
+                <li><a href="About.html">About Us</li></a>
+                <li><a href="Programme.html">Programme</li></a>
+                <li><a href="Pay.html">Registration</li></a>
+                <li><a href="Contact.html">Contact Us</li></a>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="pro-links">
+                    <a href="http://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="http://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+                    <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                </div>
+                </div>
+            <div class="copyright">
+                <p>Copyright @2023 All rights reserved | This template  is made by Andy Ho</p>
+            </div>
+        </footer>
+    </body>
+</html>
